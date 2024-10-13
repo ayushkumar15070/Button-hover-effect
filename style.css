@@ -1,0 +1,55 @@
+body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 92vh;
+      width: 100%;
+      overflow-x: hidden;
+      background-color: rgb(36, 36, 32);
+}
+
+.container {
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      border: 2px solid rgb(84, 239, 84);
+      border-radius: 34px;
+      display: flex;
+      align-items: start;
+      padding: 2rem 0;
+      position: relative;
+      justify-content: center;
+      overflow: hidden;
+}
+
+button.btn {
+      padding: 10px 20px;
+      border-radius: 34px;
+      font-size: 17px;
+      border: 2px solid rgb(84, 239, 84);
+      outline: none;
+      background-color: transparent;
+      color: white;
+      transition: all 0.4s ease;
+      cursor: pointer;
+}
+
+button.btn:hover {
+      background-color: rgb(84, 239, 84);
+      color: black;
+}
+
+.container .on-hover-text {
+      color: rgb(84, 239, 84);
+      position: absolute;
+      bottom: -100%;
+      font-family: 'Pippins', sans-serif;
+      font-size: 2.5rem;
+      text-align: center;
+      left: 0;
+      transition: all 0.5s ease;
+}
+
+button.btn:hover .on-hover-text {
+      bottom: -40px;
+}
